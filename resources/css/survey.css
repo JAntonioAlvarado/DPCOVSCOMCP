@@ -1,0 +1,104 @@
+body{
+    display: flex !important;
+    /* justify-content: center !important; */
+}
+
+form{
+    width: 100%;
+    padding: 10px;
+}
+
+/* Nombre del encuestado */
+.form-label{
+    font-size: 20px;
+}
+
+/* Contenedor del nombre */
+.form-control{
+    border-color: black !important;
+    background-color: white !important;
+    width: 50% !important;
+    height: 30px;
+}
+
+.accordion{
+    padding: 20px 0px;
+}
+/* orilla, Eliminar borde gris */
+.accordion-item{
+    border: none !important;
+}
+
+/* Títulos desplegables */
+.accordion-button{
+    background-color: #d1e4fd !important;
+    font-size: 20px !important;
+    padding: 10px !important;
+    margin-bottom: 5px !important;
+}
+.accordion-button:focus{
+    box-shadow: none !important;
+}
+
+/* Contenedor de las preguntas y respuestas */
+.question-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.question-container:hover{
+    background-color: #d1e4fd
+}
+
+/* Preguntas */
+.question-container p {
+    flex: 1;
+    margin: 0;
+    font-size: 18px;
+}
+
+/* Espacio de las opciones */
+.options-container {
+    display: flex;
+    gap: 20px;
+}
+
+.option-label {
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.si{background-color: lightgreen;}
+.no{background-color: rgb(255, 134, 134);}
+
+span{
+    display: block;
+    height: 100% !important;
+    padding: 8px 15px;
+}
+
+.option-label input[type="radio"] {
+    display: none;
+}
+
+.option-label input[type="radio"]:checked + span{
+    background-color: #007bff !important;
+    color: white;
+}
+
+/* contenedor del botón */
+.d-flex{
+    display: flex;
+    justify-content: right;
+    padding-right: 30px;
+}
+
+/* botón */
+.btn-primary{
+    font-size: 16px !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+}
