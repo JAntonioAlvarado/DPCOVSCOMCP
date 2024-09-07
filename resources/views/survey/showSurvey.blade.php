@@ -19,7 +19,7 @@
         <div class="accordion" id="accordionSections">
             <div class="accordion-item">
                 <h2 class="accordion-header" id="headingReduce">
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseReduce" aria-expanded="true" aria-controls="collapseReduce">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseReduce" aria-expanded="false" aria-controls="collapseReduce">
                         Reducir consumo de insumos
                     </button>
                 </h2>

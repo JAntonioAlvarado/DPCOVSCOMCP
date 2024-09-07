@@ -1,4 +1,4 @@
-<?php
+<!-- 
 
 namespace Database\Seeders;
 
@@ -22,11 +22,11 @@ class reduceSeeder extends Seeder
         ]);
 
         Reduce::create([
-            'question' => ' Se han establecido objetivos para reducir el consumo de Energía en las operaciones de la empresa',
+            'question' => 'Se han establecido objetivos para reducir el consumo de Energía en las operaciones de la empresa',
         ]);
 
         Reduce::create([
-            'question' => ' Se han establecido objetivo para reducir el consumo de agua en las operaciones de la empresa',
+            'question' => 'Se han establecido objetivo para reducir el consumo de agua en las operaciones de la empresa',
         ]);
 
         Reduce::create([
@@ -73,4 +73,4 @@ class reduceSeeder extends Seeder
             'question' => 'Se adquieren equipos de mayor durabilidad',
         ]);
     }
-}
+} -->

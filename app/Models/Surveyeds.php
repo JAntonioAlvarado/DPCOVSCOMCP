@@ -9,10 +9,17 @@ class Surveyeds extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['name'];
+    protected $fillable = ['enterprise_id', 'survey_id'];
 
-    public function responses()
-    {
-        return $this->hasMany(Responses::class);
+    public function enterprise() {
+        return $this->belongsTo(Enterprise::class);
+    }
+
+    public function survey() {
+        return $this->belongsTo(Survey::class);
+    }
+
+    public function responses() {
+        return $this->hasMany(Responses::class, 'surveyed_id');
     }
 }

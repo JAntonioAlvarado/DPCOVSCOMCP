@@ -1,15 +1,15 @@
 <?php
 
-namespace App\Models;
+// namespace App\Models;
 
-use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Database\Eloquent\Model;
+// use Illuminate\Database\Eloquent\Factories\HasFactory;
+// use Illuminate\Database\Eloquent\Model;
 
-class Remanufacture extends Model
-{
-    use HasFactory;
+// class Remanufacture extends Model
+// {
+//     use HasFactory;
 
-    protected $table = 'remanufacture';
+//     protected $table = 'remanufacture';
 
-    protected $fillable = ['question'];
-}
+//     protected $fillable = ['question'];
+// }

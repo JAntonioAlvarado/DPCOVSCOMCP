@@ -1,8 +1,8 @@
-<?php
+<!-- 
 
 namespace Database\Seeders;
 
-// use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use App\Models\Reuse;
 
@@ -41,4 +41,4 @@ class reuseSeeder extends Seeder
             'question' => 'Se donan artículos que ya no son necesarios pero siguen siendo funcionales',
         ]);
     }
-}
+} -->

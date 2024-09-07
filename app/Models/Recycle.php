@@ -1,15 +1,15 @@
 <?php
 
-namespace App\Models;
+// namespace App\Models;
 
-use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Database\Eloquent\Model;
+// use Illuminate\Database\Eloquent\Factories\HasFactory;
+// use Illuminate\Database\Eloquent\Model;
 
-class Recycle extends Model
-{
-    use HasFactory;
+// class Recycle extends Model
+// {
+//     use HasFactory;
 
-    protected $table = 'recycle';
+//     protected $table = 'recycle';
 
-    protected $fillable = ['question'];
-}
+//     protected $fillable = ['question'];
+// }

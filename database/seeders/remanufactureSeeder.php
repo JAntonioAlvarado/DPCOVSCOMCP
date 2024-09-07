@@ -1,8 +1,8 @@
-<?php
+<!-- 
 
 namespace Database\Seeders;
 
-// use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use App\Models\Remanufacture;
 
@@ -33,4 +33,4 @@ class remanufactureSeeder extends Seeder
             'question' => 'Se promueve la cultura de la reparación, incentivando a los empleados y clientes a reparar en lugar de reemplazar',
         ]);
     }
-}
+} -->

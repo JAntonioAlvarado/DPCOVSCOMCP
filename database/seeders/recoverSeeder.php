@@ -1,10 +1,10 @@
-<?php
+<!-- 
 
 namespace Database\Seeders;
 
-// use Illuminate\Database\Console\Seeds\WithoutModelEvents;
-use Illuminate\Database\Seeder;
-use App\Models\Recover;
+use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+ use Illuminate\Database\Seeder;
+ use App\Models\Recover;
 
 class recoverSeeder extends Seeder
 {
@@ -41,4 +41,4 @@ class recoverSeeder extends Seeder
             'question' => 'Realiza esfuerzos para recuperar energía a partir de residuos, como la producción de biogás o incineración controlada',
         ]);
     }
-}
+} -->

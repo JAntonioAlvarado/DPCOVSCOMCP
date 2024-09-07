@@ -102,3 +102,32 @@ span{
     padding-left: 20px !important;
     padding-right: 20px !important;
 }
+
+/* Titulo de la sección para ver las respuestas */
+.responses-title{
+    /* background-color: #d1e4fd; */
+    border-radius: 10px;
+    /* width: fit-content; */
+    /* font-weight: 600; */
+}
+
+/* Titulo de las secicones para ver las respuestas */
+.section-title{
+    background-color: #d1e4fd;
+    border-radius: 10px;
+}
+
+.answer{
+    background-color: yellow;
+}
+
+.show-label {
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-align: center;
+    width: 25px;
+    height: 25px;
+    background-color: #007bff;
+    color: white;
+}
