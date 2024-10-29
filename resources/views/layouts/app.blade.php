@@ -2,7 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>@yield('title', 'Empresas')</title>
+    <title>
+        @yield('title', 'SysVECSE')
+    </title>
     <!-- Bootstrap CSS -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->
@@ -26,10 +28,10 @@
             {{-- <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
                 <button class="btn btn-primary" id="menu-toggle">Bar</button>
             </nav> --}}
-            <div class="container-fluid mt-4">
+            <div class="container-fluid mt-2">
                 @yield('content')
             </div>
-        </div>
+        {{-- </div> --}}
         <!-- /#page-content-wrapper -->
     {{-- </div> --}}
     <!-- /#wrapper -->

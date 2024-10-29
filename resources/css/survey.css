@@ -1,11 +1,48 @@
 body{
     display: flex !important;
-    /* justify-content: center !important; */
+    justify-content: center !important;
+    align-items: center;
+    margin: 0;
+    padding: 0;
 }
 
 form{
     width: 100%;
-    padding: 10px;
+}
+
+i{
+    color: #1b5d78;
+    font-size: 25px;
+}
+
+ul{
+    margin-bottom: 5px;
+    margin-top: 5px;
+    padding-left: 10px;
+}
+
+.item-right{
+    right: 0;
+    margin-left: 100%;
+}
+
+/* Clase para ajustar el contenedor a todo lo ancho */
+.fixed-container{
+    width: 100%;
+}
+
+/* Clase para alinear los objetos a la derecha */
+.fixed-right{
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+/* Clase para alinear los objetos al centro */
+.fixed-center{
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 /* Nombre del encuestado */
@@ -13,17 +50,41 @@ form{
     font-size: 20px;
 }
 
+.buttons{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 5px;
+    width: 100%;
+}
+
+.buttons a{
+    height: 25px;
+    /* background-color: pink; */
+}
+
+.buttons form{
+    width: auto;
+    display: flex !important;
+    align-items: center !important;
+    /* background-color: pink; */
+}
+
+
 /* Contenedor del nombre */
 .form-control{
     border-color: black !important;
     background-color: white !important;
     width: 50% !important;
-    height: 30px;
+    min-width: 200px !important;
 }
 
+/* Contenedor de los botones de acordeón desplegables */
 .accordion{
-    padding: 20px 0px;
+    /* padding: 20px 0px; */
+    /* background-color: red; */
+    width: 100%;
 }
+
 /* orilla, Eliminar borde gris */
 .accordion-item{
     border: none !important;
@@ -36,8 +97,42 @@ form{
     padding: 10px !important;
     margin-bottom: 5px !important;
 }
-.accordion-button:focus{
+.enterprises-accordion{
+    background-color: #1b5d78 !important;
+    color: white !important;
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+}
+
+
+.accordion-button:focus, .accordion-button-enterprises:focus{
     box-shadow: none !important;
+}
+
+/* INICIA Estilo de la flecha del acordeón */
+.accordion-button::after {
+    content: '\25BC';
+    color: white; /* Cambia este color al que prefieras */
+    background-image: none !important;
+}
+.accordion-button:not(.collapsed)::after {
+    transform: rotate(180deg); /* Rota la flecha cuando el acordeón está abierto */
+}
+/* TERMINA Estilo de la flecha del acordeón */
+
+/* Contenido de las páginas */
+.container-fluid{
+    /* background-color: purple; */
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: black; */
 }
 
 /* Contenedor de las preguntas y respuestas */
@@ -105,7 +200,6 @@ span{
 
 /* Titulo de la sección para ver las respuestas */
 .responses-title{
-    /* background-color: #d1e4fd; */
     border-radius: 10px;
     /* width: fit-content; */
     /* font-weight: 600; */
@@ -130,4 +224,65 @@ span{
     height: 25px;
     background-color: #007bff;
     color: white;
+}
+
+/* Visualización de la empresa */
+.enterprise-info{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+
+.enterprise-info p{
+    cursor: default;
+    font-size: 18px;
+    max-width: 100%;
+    overflow-wrap: break-word;
+}
+
+/* Clase para centrar los títulos de más de un renglón */
+.centered-title{
+    text-align: center;
+    display: inline-block;
+}
+
+.centered-input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+}
+
+.centered-input label{
+    margin: 0 10px 0 -100px;
+    width: 100px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.centered-input input{
+    width: 28% !important;
+}
+
+/* Clase para ajustar los inputs no manipulables */
+.non-editable, .non-editable:focus{
+    cursor: default;
+    box-shadow: none;
+    background-color: #d1e4fd !important;
+}
+
+/* Mensaje que se despliega al hacer click, inialmente oculto */
+#user-message{
+    display: none;
+}
+
+label a, .required-inputs, #user-message{
+    color: red !important;
+    margin-bottom: 0;
+}
+
+/* Tamaño de las alertas de validación */
+.alert-danger{
+    width: fit-content;    
 }

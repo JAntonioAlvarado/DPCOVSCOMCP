@@ -8,7 +8,7 @@ use App\Models\Survey;
 use App\Models\SurveySection;
 use App\Models\SurveyQuestion;
 
-class sustainabilitySeeder extends Seeder
+class SustainabilitySeeder extends Seeder
 {
     /**
      * Run the database seeds.

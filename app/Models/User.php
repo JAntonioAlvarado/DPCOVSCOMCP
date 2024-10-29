@@ -18,7 +18,8 @@ class User extends Authenticatable
      */
     protected $fillable = [
         'name',
-        'email',
+        'username',
+        // 'email',
         'password',
     ];
 
@@ -43,5 +44,11 @@ class User extends Authenticatable
             'email_verified_at' => 'datetime',
             'password' => 'hashed',
         ];
+    }
+
+    // Este método indicará que debe usar el campo "username" para autenticación en lugar del "email"
+    public function getAuthIdentifierName()
+    {
+        return 'username';
     }
 }

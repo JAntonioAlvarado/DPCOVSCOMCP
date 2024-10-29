@@ -1,4 +1,4 @@
-<!-- resources/views/enterprises/index.blade.php -->
+<!-- resources/views/survey/showResponses.blade.php -->
 @extends('layouts.app')
 
 @section('content')

@@ -1,34 +1,34 @@
-/* #wrapper {
+#wrapper {
     display: flex;
     width: 100%;
     align-items: stretch;
-} */
+}
 
 /* Barra lateral */
-/* #sidebar-wrapper {
+#sidebar-wrapper {
     min-height: 100vh;
     width: 250px;
     margin-left: -250px;
     transition: margin 0.25s ease-out;
-} */
+}
 
 /* Contenido de la página */
-/* #page-content-wrapper {
+#page-content-wrapper {
     width: 100%;
     background-color: red !important;
-} */
+}
 
-/* #wrapper.toggled #sidebar-wrapper {
+#wrapper.toggled #sidebar-wrapper {
     margin-left: 0;
-} */
+}
 
 /* Cabecera de la barra lateral */
-/* .sidebar-heading {
+.sidebar-heading {
     padding: 0.875rem 1.25rem;
     font-size: 1.2rem;
-} */
+}
 
 
-/* .list-group-item {
+.list-group-item {
     padding: 0.75rem 1.25rem;
-} */
+}

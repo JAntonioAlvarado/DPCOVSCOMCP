@@ -4,6 +4,15 @@
 <div class="container">
     <h1>Crear Encuesta para {{ $enterprise->name }}</h1>
     <a href="{{ route('survey.createSurvey') }}" class="btn btn-secondary mb-3">Crear Nueva Encuesta</a>
+    @if ($errors->any())
+    <div class="alert alert-danger">
+        <ul>
+            @foreach ($errors->all() as $error)
+                <li>{{ $error }}</li>
+            @endforeach
+        </ul>
+    </div>
+@endif
     <form action="{{ route('survey.store', $enterprise->id) }}" method="POST">
         @csrf
         <div class="mb-3">

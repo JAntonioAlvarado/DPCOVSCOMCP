@@ -25,9 +25,8 @@ class UserFactory extends Factory
     {
         return [
             'name' => fake()->name(),
-            'email' => fake()->unique()->safeEmail(),
-            'email_verified_at' => now(),
-            'password' => static::$password ??= Hash::make('password'),
+            'username' => Str::limit(fake()->unique()->userName(), 16), // Limitar el nombre de usuario a 10 caracteres
+            'password' => Hash::make(Str::random(16)), // Generar una contraseña de 16 caracteres
             'remember_token' => Str::random(10),
         ];
     }
@@ -38,7 +37,8 @@ class UserFactory extends Factory
     public function unverified(): static
     {
         return $this->state(fn (array $attributes) => [
-            'email_verified_at' => null,
+            // Si se quiere usar verificación, agregar algo aquí si es necesario
+            // 'email_verified_at' => null,
         ]);
     }
 }

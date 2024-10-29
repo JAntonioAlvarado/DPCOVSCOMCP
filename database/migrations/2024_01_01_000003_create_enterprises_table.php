@@ -14,7 +14,12 @@ return new class extends Migration
         Schema::create('enterprises', function (Blueprint $table) {
             $table->id();
             $table->string('name');
+            $table->string('type');
+            $table->string('sector');
+            $table->foreignId('user_id')->nullable()->constrained()->onDelete('set null');
+            $table->text('direction')->nullable();
             $table->text('description')->nullable();
+            $table->boolean('active')->default(true); 
             $table->timestamps();
         });
     }
